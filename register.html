@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <title>تسجيل حساب جديد</title>
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Tajawal:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styleRegister.css">
+</head>
+
+<body class="register-page">
+
+  <header class="main-header">
+    <img src="logo.png" alt="لوجو صفصف" class="site-logo">
+
+    <div class="search-area">
+      <button class="search-btn"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></button>
+      <input type="text" placeholder="ابحثي عن وصفه مكون او اكلة..">
+    </div>
+
+    <div class="account-area">
+      <a href="login.html" class="account-link"><i class="fa-solid fa-circle-user fa-2xl"></i></a>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html" class=""><i class="fa-solid fa-house"></i> الصفحة الرئيسية</a></li>
+      <li><a href="recipes.html" class=""><i class="fa-solid fa-utensils"></i> جميع الوصفات</a></li>
+      <li><a href="" class=""><i class="fa-solid fa-egg"></i> وصفات الفطور</a></li>
+      <li><a href="" class=""><i class="fa-solid fa-fish-fins"></i> وصفات الغداء</a></li>
+      <li><a href="" class=""><i class="fa-solid fa-cookie"></i> الحلويات</a></li>
+      <li><a href="" class=""> <i class="fa-solid fa-pizza-slice"></i> المخبوزات</a></li>
+    </ul>
+  </nav>
+
+  <div class="auth-box">
+    <h1>أهلاً بك في مطبخ صفصف</h1>
+    <h2>تسجيل حساب جديد</h2>
+    <form id="registerForm">
+      <input type="text" id="newUsername" placeholder="تعيين اسم المستخدم" required>
+      <input type="password" id="newPassword" placeholder="تعيين كلمة المرور" required>
+      <button type="submit">تسجيل</button>
+      <p>هل لديك حساب بالفعل؟<a href="login.html">سجل دخول</a></p>
+    </form>
+    <p id="success" style="color:green;"></p>
+  </div>
+
+  <section class="contact-section">
+    <h2>تواصلي مع صفصف</h2>
+    <p>عندك وصفة حابة تشاركيها؟ أو اقتراح للموقع؟ اكتبيلي هنا</p>
+    <form action="send-message.php" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="اسمك" required>
+      <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+      <textarea name="message" rows="5" placeholder="رسالتك أو اقتراحك" required></textarea>
+      <button type="submit" class="btn">إرسال</button>
+    </form>
+  </section>
+
+  <script src="register.js"></script>
+</body>
+
+</html>

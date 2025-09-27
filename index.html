@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>المطبخ مع صفصف</title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Tajawal:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styleRecipes.css">
+    <link rel="stylesheet" href="stylehome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="landing-page">
+
+    <header class="main-header">
+
+        <img src="logo.png" alt="لوجو صفصف" class="site-logo">
+
+        <div class="search-area">
+            <button class="search-btn" onclick="searchRecipe()"><i
+                    class="fa-solid fa-magnifying-glass fa-2xl"></i></button>
+            <input type="text" id="searchInput" placeholder="ابحثي عن وصفه مكون او اكلة..">
+
+        </div>
+
+        <div class="account-area">
+            <a href="login.html" class="account-link"><i class="fa-solid fa-circle-user fa-2xl"></i></a>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html" class=""><i class="fa-solid fa-house"></i> الصفحة الرئيسية</a></li>
+            <li><a href="recipes.html" class=""><i class="fa-solid fa-utensils"></i> جميع الوصفات</a></li>
+            <li><a href="" class=""><i class="fa-solid fa-egg"></i> وصفات الفطور</a></li>
+            <li><a href="" class=""><i class="fa-solid fa-fish-fins"></i> وصفات الغداء</a></li>
+            <li><a href="" class=""><i class="fa-solid fa-cookie"></i> الحلويات</a></li>
+            <li><a href="" class=""> <i class="fa-solid fa-pizza-slice"></i> المخبوزات</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+        </div>
+    </section>
+
+    <section class="featured-recipes">
+        <h2>وصفات مميزة</h2>
+        <div class="recipe-cards">
+            <div class="recipe-card">
+                <img src="19d8de98ca5f0d8f2a059849b23dd632.webp" alt="تشيز كيك الفراولة">
+                <h3>تشيز كيك الفراولة</h3>
+                <p>طبقات رائعة وغنية ومنعشة خصوصاً في الصيف</p>
+                <a href="#">شوفي الوصفة</a>
+            </div>
+            <div class="recipe-card">
+                <img src="51a14d3d426060d9005b85e519ad8494.jpg" alt="كوكيز">
+                <h3>كوكيز</h3>
+                <p>مقرمش ورائع جدا ف جميع اللأوقات</p>
+                <a href="#">شوفي الوصفة</a>
+            </div>
+            <div class="recipe-card">
+                <img src="d7af8e0d9c8dece17f1b0ab1a2ebc243.jpg" alt="بيتزا">
+                <h3>بيتزا</h3>
+                <p>وصفة ايطالية رائعة ومحبوبه لدى الجميع</p>
+                <a href="#">شوفي الوصفة</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact-section">
+        <h2>تواصلي مع صفصف</h2>
+        <p>عندك وصفة حابة تشاركيها؟ أو اقتراح للموقع؟ اكتبيلي هنا</p>
+        <form action="send-message.php" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="اسمك" required>
+            <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+            <textarea name="message" rows="5" placeholder="رسالتك أو اقتراحك" required></textarea>
+            <button type="submit" class="btn">إرسال</button>
+        </form>
+    </section>
+
+
+    <script>
+
+        function searchRecipe() {
+            let input = document.getElementById("searchInput").value.trim();
+            let recipe = document.querySelectorAll(".recipe");
+
+            recipes.forEach(recipe => {
+                // ناخد الاسم من data-title
+                let title = recipe.dataset.title;
+
+                // لو الكلمة مكتوبة ضمن الاسم → يظهر
+                if (title.includes(input) || input === "") {
+                    recipe.style.display = "block";
+                } else {
+                    recipe.style.display = "none";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>

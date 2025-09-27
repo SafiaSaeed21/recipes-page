@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>وصفات صفصف</title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Tajawal:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styleRecipes.css">
+
+</head>
+
+<body class="recipes-page">
+
+    <header class="main-header">
+        <img src="logo.png" alt="لوجو صفصف" class="site-logo">
+
+        <div class="search-area">
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></button>
+            <input type="text" placeholder="ابحثي عن وصفه مكون او اكلة..">
+        </div>
+
+        <div class="account-area">
+            <a href="login.html" class="account-link"><i class="fa-solid fa-circle-user fa-2xl"></i></a>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html" class=""><i class="fa-solid fa-house"></i> الصفحة الرئيسية</a></li>
+            <li><a href="recipes.html" data-filter="الكل"><i class="fa-solid fa-utensils"></i> جميع الوصفات</a></li>
+            <li><a href="#" data-filter="الفطور"><i class="fa-solid fa-egg"></i> وصفات الفطور</a></li>
+            <li><a href="#" data-filter="الغداء"><i class="fa-solid fa-fish-fins"></i> وصفات الغداء</a></li>
+            <li><a href="#" data-filter="الحلويات"><i class="fa-solid fa-cookie"></i> الحلويات</a></li>
+            <li><a href="#" data-filter="المخبوزات"> <i class="fa-solid fa-pizza-slice"></i> المخبوزات</a></li>
+        </ul>
+    </nav>
+    <main class="recipes-main">
+        <h3 class="section-title"></h3>
+
+        <section class="recipes-list">
+
+            <div class="recipe-card">
+                <div class="recipe" data-tags="جميع الوصفات,وصفات الغداء">
+                    <img src="Egyptian-Koshari-Featured.jpg" alt="كشري مصري">
+                    <h3>كشري مصري</h3>
+                    <p>أكلة مصرية مشهورة ومحبوبة من العدس والمكرونة والرز.</p>
+                    <a href="recipes/koshari.html" class="view-recipe-btn">شوفي الوصفة</a>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe" data-tags="جميع الوصفات,وصفات الحلويات,وصفات المخبوزات">
+                    <img src="article_maamool-recipe_square.jpg" alt="معمول تمر">
+                    <h3>معمول تمر</h3>
+                    <p>بسكويت محشو بالتمر بنكهة عربية تقليدية لذيذة.</p>
+                    <a href="#">شوفي الوصفة</a>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe" data-tags="جميع الوصفات,وصفات الحلويات">
+                    <img src="19d8de98ca5f0d8f2a059849b23dd632.webp" alt="تشيز كيك الفراولة">
+                    <h3>تشيز كيك الفراولة</h3>
+                    <p>طبقات رائعة وغنية ومنعشة خصوصاً في الصيف</p>
+                    <a href="#">شوفي الوصفة</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <div class="recipe" data-tags="جميع الوصفات,وصفات الغداء">
+                    <img src="7d9ea1216d0e283c9f89968a9c2c9eb0.jpg" alt="شيش طاووق">
+                    <h3>شيش طاووق</h3>
+                    <p>وجبة غذاء رائعه للنزهات العائلية</p>
+                    <a href="#">شوفي الوصفة</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <div class="recipe" data-tags="جميع الوصفات,وصفات المخبوزات,وصفات الحلويات">
+                    <img src="51a14d3d426060d9005b85e519ad8494.jpg" alt="كوكيز">
+                    <h3>كوكيز</h3>
+                    <p>مقرمش ورائع جدا ف جميع اللأوقات</p>
+                    <a href="#">شوفي الوصفة</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <div class="recipe" data-tags="جميع الوصفات,وصفات الفطور,وصفات الحلويات">
+                    <img src="pexels-ash-craig-122861-376464.jpg" alt="بان كيك">
+                    <h3>بان كيك</h3>
+                    <p>رائعه وخفيفة لفطور وبداية يوم جميل</p>
+                    <a href="#">شوفي الوصفة</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <div class="recipe" data-tags="جميع الوصفات,وصفات الغداء">
+                    <img src="f03f3ee0ba5b6734e475941411ba3755.jpg" alt="كرات اللحم السويدية">
+                    <h3>كرات اللحم السويدية</h3>
+                    <p>رائعة ومذاقها غني ومحبوبه لدى الجميع</p>
+                    <a href="#">شوفي الوصفة</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <div class="recipe" data-tags="جميع الوصفات,وصفات المخبوزات,وصفات الحلويات">
+                    <img src="kapak_181945.jpg" alt="فطيرة التفاح">
+                    <h3>فطيرة التفاح</h3>
+                    <p>رائحتها جميلة وطعمها أجمل، مناسبة جداٌ لأيام الشتاء الباردة</p>
+                    <a href="#">شوفي الوصفة</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <div class="recipe" data-tags="جميع الوصفات,وصفات المخبوزات,وصفات الحلويات">
+                    <img src="28e0978197ece049045eab4dbc2aee32.jpg" alt="كيك الجزر">
+                    <h3>كبك الجزر</h3>
+                    <p>رائعه وجميلة ف كل الأوقات </p>
+                    <a href="#">شوفي الوصفة</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <div class="recipe" data-tags="جميع الوصفات,وصفات الفطور">
+                    <img src="pexels-nicola-barts-7937471.jpg" alt="توست الأفوكادو">
+                    <h3>توست الأفوكادو</h3>
+                    <p>رائعة للفطور وغنية بالفيتامينات لبداية يوم كله طاقه وحيوية</p>
+                    <a href="#">شوفي الوصفة</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <div class="recipe" data-tags="جميع الوصفات, وصفات المخبوزات,وصفات الغداء">
+                    <img src="d7af8e0d9c8dece17f1b0ab1a2ebc243.jpg" alt="بيتزا">
+                    <h3>بيتزا</h3>
+                    <p>وصفة ايطالية رائعة ومحبوبه لدى الجميع</p>
+                    <a href="#">شوفي الوصفة</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <div class="recipe" data-tags="جميع الوصفات,وصفات الحلويات">
+                    <img src="c06c5e3a922201a51773a93ca021a2af.jpg" alt="حلى الطيبين">
+                    <h3>حلى الطيبين</h3>
+                    <p>مميز بقوامه البارد الرائع وطبقاته الغنية المنعشه مناسب لجميع الاذواق</p>
+                    <a href="#">شوفي الوصفة</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <section class="contact-section">
+        <h2>تواصلي مع صفصف</h2>
+        <p>عندك وصفة حابة تشاركيها؟ أو اقتراح للموقع؟ اكتبيلي هنا</p>
+        <form action="send-message.php" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="اسمك" required>
+            <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+            <textarea name="message" rows="5" placeholder="رسالتك أو اقتراحك" required></textarea>
+            <button type="submit" class="btn">إرسال</button>
+        </form>
+    </section>
+
+    <script>
+
+        const filterLinks = document.querySelectorAll('[data-filter]');
+        const recipes = document.querySelectorAll('.recipe');
+
+        filterLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const filter = link.dataset.filter;
+
+                recipes.forEach(recipe => {
+                    const tags = recipe.dataset.tags.split(',');
+                    if (filter === 'الكل' || tags.includes(`وصفات ${filter}`)) {
+                        recipe.parentElement.style.display = 'block';
+                    } else {
+                        recipe.parentElement.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        function logout() {
+            localStorage.removeItem("loggedInUser");
+            window.location.href = "login.html";
+        }
+        const user = localStorage.getItem("loggedInUser");
+        if (!user) {
+            window.location.href = "login.html";
+        }
+    </script>
+
+</body>
+
+</html>
